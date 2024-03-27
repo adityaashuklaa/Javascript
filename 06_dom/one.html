@@ -1,3 +1,7 @@
+// Document Object Model(DOM)
+
+// console.dir(document) .dir will give some extra information. 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,3 +33,15 @@
     </div>
 </body>
 </html>
+
+// document.getElementById('title').class = undefined
+// const title = document.getElementById('title')
+// title.style.backgroundcolor = 'green'
+// title.textContent ,  title.innerHTML, title.innerText all returns same values. But there's a diiference. 
+// In innerText only visible content is shown and in innerContent every content is shown. 
+// innerHTML gives all value of the HTML. 
+// querySelector will select the first item you want to select. querySelector('h1') will select the first h1. More likely like CSS Selectors
+// querySelectorAll will select all the items you want to select and returns a nodelist. querySelector('h1') will select all the h1.
+// If you store the value of querySelector into a variable you can again run the querSelector on it. 
+// Nodelist is not an array that's why map function can't be used in it, it's similar to array that's why elements are acccesed by [index]
+// HTMLcollection can be converted into an array by using Array.from()  (variablename)
