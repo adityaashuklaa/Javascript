@@ -18,22 +18,25 @@
 <script>
     const parent = document.querySelector('.parent')
     // console.log(parent);
-    // console.log(parent.children);
+    // console.log(parent.children); //children will return a HTMLCollection of all th elements. 
     // console.log(parent.children[1].innerHTML);
 
+    // for loop is a normal loop which works on array and array like data dtpes. In this case HTMLCollection. 
     // for (let i = 0; i < parent.children.length; i++) {
     //      console.log(parent.children[i].innerHTML);
         
     // }
     parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
+    // console.log(parent.firstElementChild); // Whole monday div/HTML will be returned.
     // console.log(parent.lastElementChild);
 
     const dayOne = document.querySelector('.day')
     // console.log(dayOne);
-    // console.log(dayOne.parentElement);
+    // console.log(dayOne.parentElement); // Better option than querySelector as per optimisation.
     // console.log(dayOne.nextElementSibling);
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes); // childNodes returns a whole DOM Structure 
 </script>
 </html>
+
+// querySelector takes time as it traverse the whole DOM. 
