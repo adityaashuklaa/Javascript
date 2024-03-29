@@ -25,7 +25,7 @@ function addTwoNumbers(number1, number2){
 
 const result = addTwoNumbers(3, 5) // Function call back is known as arguements. 
 
-// console.log("Result: ", result); //It will eturned undefined as returned keyword is not being used. 
+// console.log("Result: ", result); //It will return undefined as return keyword is not being used. 
 
 
 function loginUserMessage(username = "sam"){ // Declaring predefined values of username, which never will be undefined. 
