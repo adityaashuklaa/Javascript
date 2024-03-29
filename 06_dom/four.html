@@ -12,36 +12,39 @@
     </ul>
 </body>
 <script>
+    // Methods to add items in a list. 
     function addLanguage(langName){
-        const li = document.createElement('li');
-        li.innerHTML = `${langName}`
+        const li = document.createElement('li'); // Element Li is being created using createElement. 
+        li.innerHTML = `${langName}` // langName is being recorded but not entered. It will entered when you append the child. 
         document.querySelector('.language').appendChild(li)
-    }
-    addLanguage("python")
+    } // All this is function defination. You've to run the method.  
+    addLanguage("python") // Argument python is being added. 
     addLanguage("typescript")
+    // There's a problem in this method cause as you appendChild it has to traverse all the li items which is not an optimised way. 
 
+    // Optimised method 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName))
+        li.appendChild(document.createTextNode(langName)) // New node is being created using createTextNode. 
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
 
-    //Edit
-    const secondLang = document.querySelector("li:nth-child(2)")
+    //Edit (Applying some changes in the values)
+    const secondLang = document.querySelector("li:nth-child(2)") // 2nd n-th child is being selected. 
     console.log(secondLang);
     //secondLang.innerHTML = "Mojo"
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    secondLang.replaceWith(newli) // replaceWith will simply replace the selected value with the value you wanna change. 
 
-    //edit
+    //edit (2nd method)
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
 
     //remove
     const lastLang = document.querySelector('li:last-child')
-    lastLang.remove()
+    lastLang.remove() // remove method will remove the selected value. 
 
 
 </script>
