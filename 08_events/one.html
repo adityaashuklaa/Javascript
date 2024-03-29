@@ -13,40 +13,47 @@
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <!-- <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" onclick="alert('owl')" ></li> --> (This approach is not at all good and feasable cause when your project will scale it'll create problems. Avoid this apoach in js, but in react it's helpful.)
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
    </div>
 </body>
 <script>
+    // JS is a sequentially run language isiliye every events in  js runs sequentially.  
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
+    // This method is good cause there might be some problems with onlick event but not best as you should use event listeners cause it gives you the ability of propagation. 
 
-     // attachEvent()
-    // jQuery - on
+     // attachEvent() // This attachEvent was used earlier.
+    // jQuery - on // on eventListener was used in jQuery language. 
 
     // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
+    // target, toElement, (srcElement), currentTarget,
     // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
+    // altkey, ctrlkey, shiftkey, keyCode (keycode is generally used in projects like monkeytype.)
 
-    // document.getElementById('images').addEventListener('click', function(e){
+    // document.getElementById('images').addEventListener('click', function(e){ // e is eventObject.
     //     console.log("clicked inside the ul");
-    // }, false)
+    // }, false) // Third parameter of EventListener is false which is default so doesn't/no need written 
+    // Event propagation has two context, one is event bubbling and 2nd one is event capturing. 
+    // Majorly default which is false => event bubbling is used and in some scenarios true => event capturing is also being used.
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    //     e.stopPropagation() // Stops propagation. 
+    // }, false) // Event Bubbling goes bottom to up. 1st owl will be clicked than the UL will be clicked. If you change it to true than Event Capturing will start which goes top to bottom. 1st li will be clicked than the owl will be clicked.
     
     // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
+    //     e.preventDefault(); // Will not direct to google. 
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
    
     
+    // Project => when you click any image it gets remove/delete.
+
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
@@ -56,8 +63,9 @@
         }
     
         
-    })
+    }, false)
     
+    //2nd method which will only remove image not ul.
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
