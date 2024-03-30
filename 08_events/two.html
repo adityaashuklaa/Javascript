@@ -10,6 +10,9 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+    // setTimeout() is a method/Function, which also calls API 
+    // setTimeout requires a handler(is also a callback funtion) and a timeout.
+    // setTimeout execute the work after a assign time (only once), where as in setInterval the work gets executed (repetatively) after given interval.
     const sayHitesh = function(){
         console.log("Hitesh");
     }
@@ -20,7 +23,7 @@
     const changeMe = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe) // clearTimeout takes the reference of the setTimeout and stop it before executing. 
         console.log("STOPPED")
     })
 </script>
