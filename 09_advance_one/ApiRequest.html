@@ -19,11 +19,15 @@
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
-            console.log(typeof data);
+            const data = JSON.parse(this.responseText) //parse is a method which changes string into JSON format. 
+            console.log(typeof data); // string  then  object. 
             console.log(data.followers);
         }
     }
     xhr.send();
 </script>
 </html>
+
+//api.github.com/users/adityaashuklaa => Free public API provided by github
+//randomuser.me is also a free pubic API. This gives long API which can be easily understood using JSON formatter.  
+//XMLHttpRequest (XMR) is a old method of API request before fetch() which havily works on AJAX programming. 
