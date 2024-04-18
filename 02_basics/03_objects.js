@@ -34,6 +34,6 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`); // This keyboard is  used to reference same object.
 }
 
-console.log(JsUser.greeting); //This will callback an anonymous function which doesn't being decalred yet.
+console.log(JsUser.greeting); //This will callback an anonymous function which doesn't being executed we have only got the refernce of it.
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
