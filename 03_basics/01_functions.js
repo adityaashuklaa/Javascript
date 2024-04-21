@@ -1,5 +1,5 @@
 // Storing values in a package is basically function. 
-function sayMyName(){
+function sayMyName(){ // This is a function defination 
     console.log("H");
     console.log("I");
     console.log("T");
@@ -19,7 +19,7 @@ addTwoNumbers(3, 4) //You've to pass arguments cause without it function will on
 function addTwoNumbers(number1, number2){
 
     // let result = number1 + number2
-    // return result //After return keyword function will not perform anything. 
+    // return result //After return keyword function will not perform anything, and return keyword returns the last value not undefined. In this case value = 8. 
     return number1 + number2 //2nd method for executing function
 }
 
