@@ -13,6 +13,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // const newNums = myNums.filter( (num) => { // Filter also takes call back function for execution. 
 //     return num > 4 // return keyword is needed when you are using {} curly braces. Without return keyword it will give an empty array.  
 // } )
+// filter function returns a value as compared to for-each loop.
 
 //2nd method for the same thing using for each loop rather than filter function.
 // const newNums = []
