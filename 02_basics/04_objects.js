@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() // This is a single ton object 
+const tinderUser = {} // This method creates a non-single ton object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -24,9 +24,9 @@ const regularUser = {
 // const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // Assign is a method which takes two parameters one is target and another one is source, and creates a new object with same elements.  
 
-// const obj3 = {...obj1, ...obj2}
+// const obj3 = {...obj1, ...obj2} // obj3 is created using spread operator. This creates a new object with same elements. Hence, most common used syntax. 
 console.log(obj3);
 
 
@@ -48,8 +48,8 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser)); // It will return all the keys of tinderUser in Array format. 
+// console.log(Object.values(tinderUser)); // It will return all the values of the object.
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
@@ -80,4 +80,4 @@ console.log(instructor);
     {}
 ]
 
-//When you give your work to somewhen else it's known as API. 
+// When you give your work to somewhen else it's known as API. 
