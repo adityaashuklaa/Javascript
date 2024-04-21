@@ -17,7 +17,7 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); // Here it's a function that's why it(this keyword) will return undefined but in object it works perfectly.
 // }
 
 // chai()
@@ -29,7 +29,7 @@ const user = {
 
 const chai =  () => {
     let username = "hitesh"
-    console.log(this);
+    console.log(this); // It will give an empty object. 
 }
 
 
@@ -41,7 +41,7 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) =>  num1 + num2  //Implicit Return method (no use of paranthesis and return keyword.)
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+// const addTwo = (num1, num2) => ( num1 + num2 ) // Here paranthesis is being used therefore there is no need to use {return keyword}
 
 const addTwo = (num1, num2) => ({username: "hitesh"}) // Objects should always wrapped inside ()
 
