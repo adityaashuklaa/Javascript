@@ -15,7 +15,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe) // Reference of print me is given to coding and you don't need to execute it, It will be executed by itself. 
 
 // coding.forEach( (item, index, arr)=> { // For-each have many parameter than just item. like these. 
 //     console.log(item, index, arr); 
