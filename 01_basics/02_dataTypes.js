@@ -20,7 +20,7 @@ let state;
 // boolean => true/false
 // null => standalone value (empty)
 // undefined => value not defined.
-// symbol => unique (majorly used in React.js)
+// symbol => unique (majorly used in React.js for making components Unique)
 
 
 // object
