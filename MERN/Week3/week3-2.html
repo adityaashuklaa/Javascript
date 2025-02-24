@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getch API, Authentication</title>
+</head>
+<body>
+    <div id="userData"></div>
+    <button onclick="getAnimalData()">Get Animal Data</button>
+
+    <script>
+        // function getAnimalData() {
+        //     const response = fetch("https://fakerapi.it/api/v1/persons")
+        //     .then(function(response){
+        //         response.json()
+        //         .then(function(finalData) {
+        //             console.log(finalData);
+        //         })
+        //     })
+        // } 
+
+        // Async Await Syntax   
+
+        async function getAnimalData() {
+            const response = await fetch("https://fakerapi.it/api/v1/persons")
+            const finalData = await response.json()
+            document.getElementById("userData").innerHTML = JSON.stringify(finalData)
+        }
+        </script>
+</body>
+</html>
+
+
+
+
+<!-- $ The fetch API, Till now we have hit a server using express or any sort of request, like get, post etc. Until now we have sent request using two ways, using postman or browser. 
+$ In this lecture i'm gonna learn how to hit a backend that is written by some another developer, and let their code being showcased on my frontend. Now that what called a real FRONTEND. 
+$ Clicking on the Button you will see a promise in a pending state in console, as fetch is an asynchonorous call.   
+    const responseMethod = fetch("https://fakerapi.it/api/v1/persons", {
+    Method: "POST" // this is another way to write a function that explicitly make sures which method is being used.});
+$ Because it is a promise that's why .then syntax is being used.
+$ Hashing : Hashing is a part of authentication, in which whenever user sign ups on any website let it be facebook, their password is converted into a random jibberish string, which is being stored in databsed, and when in future user tries to log in to the account, the backend code, converts the password sent by user at the login time into a hash code, and checks it with the hashed code being saced in the database, if the process pass the checks then the user is able to loged in to their account. 
+Is is a one way process, you can only convert a string into a hash, not a hash into a string to it's original state. But there's an another thing called ENCRYPTIOn, which is two way.
+$ Encryption : You can convert the hased code into string, provided you have a key. That's let's this process haappen.
+$ JWT : Json Web Token. This is the third method of the cryptography concept.
+The first difference in JWT is, it takes JSON as an input. Secondally, It takes the JSON input and gives back a token. A long string is a token.
+It is an input converted into an output, and whosever has the output can see the input. Conversion anyone can do, but VERFICATION can only that particular server can do.
+JWT is sort of a Digital Signature, only the main server can verify it.
+Tokens are being stored in local storage under application.
+JWT Saves your databses call, as you are not hiting the DB again and again, the token is being stored in local storage of the browser.
+    -->
