@@ -118,5 +118,5 @@ $ Middleware is a generic function that doesn't know what is the next function a
 $ app.use(express.json()) is a middleware used to get the post body parameter. The use of this function is, you dont have to pass the middleware in the route handlers, the code below this line automatically adds that particular middleware to the route handlers.
 
 $ There is a global catch middleware which is used in the end of the code, for the exception and the error being occured in the code, which runs the code written inside this middleware. It takes four inputs as an argument.
-$ Zod is a popular node.js library used to do Input Validation.
+$ Zod is a popular node.js library used to do Input Validation. 
 */
