@@ -49,4 +49,22 @@ It is an input converted into an output, and whosever has the output can see the
 JWT is sort of a Digital Signature, only the main server can verify it.
 Tokens are being stored in local storage under application.
 JWT Saves your databses call, as you are not hiting the DB again and again, the token is being stored in local storage of the browser.
+
+$ In real world, you have plenty of DBs connected to the backend server, as if any of the DB is crashed or some error occured, the server should not goes down. 
+$ In real world, basic architecture looks likes. 
+A user hits a server => Server(Backend) => Backend hits the DB. DB gives back the data demanded by the server, and the server provides the data to the end user.
+
+$ MongoDb lets you create different databases in a single machine, the databases being created are in the format of the tables(collections), in each table it lets you dump JSON data, MongoDB is schemaless.
+$ Schemaless means you can dump anything, there's no structured defined. SQL DBs don't let you do that.
+$ As MongoDB is schemaless, Mongoose on top of that is a library that puts a validation on top of that.     
+$ Backend Connects to database using libraries, Like in MERN Stack Usually. 
+ 1. Express Lets you create an HTTP Server
+ 2. JsonWebTokens library lets you create jwts
+ 3. Mongoose lets you connect to your database
+
+ Recap For what we are building today. 
+ We'll create a backend logic or a server that is somehow connected to a database. The end user can send one of three requests, Sign up, Sign In, Users
+
+ In some of the tokes you get to see there's Bearer written on the top, that just tells that this token is of Bearer type, there are multiple types of tokens.
+ In JWT anyone can decrypt it, on JWT website, but you need the password to VERIFY.
     -->

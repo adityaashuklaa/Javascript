@@ -75,6 +75,8 @@ app.delete('/', function(req, res) {
 })
 
 app.get('/files/:filename', function(req, res) {
+    const name = req.params.fileName; 
+    console.log(name);
     res.send("If there's /:filename after the route, it will get everything written after that route.")
 })
 
