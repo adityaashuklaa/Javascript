@@ -17,7 +17,7 @@
 // const express = require("express");
 // const app = express();
 // const bodyParser = require("body-parser"); // Used to access the body through the POST REQUEST. Cause express doesn't handles that. (npm install body-parser)
-// const port = 3001;
+// const port = 3001;   
 
 
 // app.use(bodyParser.json());
