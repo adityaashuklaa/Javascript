@@ -9,7 +9,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // const allHeros = marvel_heros.concat(dc_heros) Combines two arrays and returns a new array
 // console.log(allHeros);
 
-const all_new_heros = [...marvel_heros, ...dc_heros] //spread operator
+const all_new_heros = [...marvel_heros, ...dc_heros] //spread operator   
 
 console.log(all_new_heros);
 console.log(typeof all_new_heros); // typeof all_new_heroes is an OBJECT.
