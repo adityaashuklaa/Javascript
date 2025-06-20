@@ -7,7 +7,7 @@ const myNums = [1, 2, 3]
 // }, 0) // 0 is the accumalator value here. 
 
 // Declaring it using arrow function. 
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)  
 
 console.log(myTotal);
 
