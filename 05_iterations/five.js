@@ -39,7 +39,7 @@ const myCoding = [
 
 myCoding.forEach( (item) => {
     
-    console.log(item.languageName);
+    console.log(item.languageName);   
 } )
 
 // This method helps in Database, where data is comming in objects in array format and you can easily extract values accordingly. 
