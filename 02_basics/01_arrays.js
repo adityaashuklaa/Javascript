@@ -5,7 +5,7 @@ const myArr = [0, 1, 2, 3, 4, 5] //Elements can be of any type also it's resizab
 const myHeors = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4) // Array usually makes shallow copies.
-// console.log(myArr[1]);
+// console.log(myArr[1]);   
 
 // Array methods
 
