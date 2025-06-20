@@ -10,7 +10,7 @@ const promiseOne = new Promise(function(resolve, reject){ // new keyword is used
 promiseOne.then(function(){ // Promise is being Consumed using (.then) .then ka seedha connection hain resolve ke sath. 
     console.log("Promise consumed");
 })
-
+  
 // 2nd Syntax. 
 new Promise(function(resolve, reject){ // It's not necessary to hold Promise in any Variable. 
     setTimeout(function(){
