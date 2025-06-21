@@ -19,7 +19,7 @@ for (const greet of greetings) {
 }
 
 // Maps (Just like arrays which have unique values and type is object, repetition is not allowed of values and remains in order.)
-
+  
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
