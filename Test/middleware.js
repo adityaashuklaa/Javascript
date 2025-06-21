@@ -17,7 +17,7 @@ function isOldEnoughMiddleware(req, res, next) {
     }else{
         res.json({
             msg: "Sorry you are not the age yet.", 
-        })
+        })  
     }
 }
 
