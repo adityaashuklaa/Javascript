@@ -46,7 +46,7 @@ app.get("/ride1", function(req, res){
 
 // Error Handling Middlewares (Always being used in the last of the code)
 app.use(function(err, req, res, next) {
-    res.status(404).send({})
+    res.status(404).send({})   
     errorCount = errorCount + 1;
 })
 app.listen(3000);
