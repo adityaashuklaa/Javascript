@@ -13,7 +13,7 @@ function promisifiedTimeout(){
         }, 5000)
     })
 }
-
+  
 console.log("in the midde 2");
 
 promisifiedTimeout().then(function (value) {
