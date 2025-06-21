@@ -47,6 +47,6 @@ for (let index = 1; index <= 20; index++) {
         console.log(`Detected 5`);
         continue // Continue skips/ignore 1 iteration and starts the loop again. Ik baar maaf kardo
     }
-//    console.log(`Value of i is ${index}`);
+//    console.log(`Value of i is ${index}`);  
     
 }
