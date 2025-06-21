@@ -49,7 +49,7 @@ app.put('/', function(req, res) {
     for(let i = 0; i<users[0].kidneys.length; i++){
         users[0].kidneys[i].healthy = true;
     }
-    res.json({})
+    res.json({})   
 })
 
 app.delete('/', function(req, res) {
