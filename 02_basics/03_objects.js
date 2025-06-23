@@ -6,7 +6,7 @@
 const mySym = Symbol("key1")
 
 
-const JsUser = { //key value pair.
+const JsUser = { //key value pair.  
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
     [mySym]: "mykey1", //syntax for declaring symbol. []
