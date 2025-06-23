@@ -10,7 +10,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(allHeros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros] //spread operator   
-
+  
 console.log(all_new_heros);
 console.log(typeof all_new_heros); // typeof all_new_heroes is an OBJECT.
 
