@@ -9,7 +9,7 @@
 // console.log("02" > 1);
 
 console.log(null > 0);
-console.log(null == 0);
+console.log(null == 0); 
 // console.log(null >= 0); Comparison operator(>) conerts null into a number and than compares. Output = true
 
 console.log(undefined == 0);
