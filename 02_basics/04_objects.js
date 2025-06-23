@@ -10,7 +10,7 @@ tinderUser.isLoggedIn = false
 const regularUser = {
     email: "some@gmail.com",
     fullname: {
-        userfullname: {
+        userfullname: {   
             firstname: "hitesh",
             lastname: "choudhary"
         }
