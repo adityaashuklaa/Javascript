@@ -22,7 +22,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // } )
 
 // For-each Loop for Objects in Array. IMPORTANT
-const myCoding = [
+const myCoding = [  
     {
         languageName: "javascript",
         languageFileName: "js"
