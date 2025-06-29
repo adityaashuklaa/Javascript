@@ -4,7 +4,7 @@ const myObject = {
     cpp: 'C++',
     rb: "ruby",
     swift: "swift by apple"
-}
+}  
 
 // For in loop (This can be used for object iterations)
 
