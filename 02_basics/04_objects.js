@@ -66,7 +66,7 @@ const course = {
 const {courseInstructor: instructor} = course // Destructuring of values of objects. using {curly braces}
 
 // console.log(courseInstructor);
-console.log(instructor);   
+console.log(instructor);     
 
 // { (JSON Format)
 //     "name": "hitesh",
