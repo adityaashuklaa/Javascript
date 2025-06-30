@@ -35,7 +35,7 @@ app.get('kidney-checkup', KidneyMiddleware, function(req, res) {
     res.send("Your kidney is fine")
 })
 
-app.get('/heart-checkup', function(req, res) {
+app.get('/heart-checkup', function(req, res) {   
     res.send("Your Heart is fine!")
 })
 
