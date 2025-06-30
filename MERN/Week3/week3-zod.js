@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 // const schema = zod.array(zod.number())
-const schema = zod.object({
+const schema = zod.object({   
     email : zod.string(),
     password : z.string(),
     country : z.literal("IN").or(z.literal("US")), // Literal means literally it should be IN. 
