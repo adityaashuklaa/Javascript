@@ -24,7 +24,7 @@ app.post('/kidney-health', function(req, res) {
     } else {
         res.send({  
             response
-        })
+        })   
     }
 })
 
