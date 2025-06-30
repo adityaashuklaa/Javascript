@@ -9,7 +9,7 @@ function userMiddleware(req, res, next) {
             "msg" :"Incorrect Inputs"
         })
     } else {
-        next()
+        next()   
     }
 }
 
