@@ -18,7 +18,7 @@ app.post('/kidney-health', function(req, res) {
     const kidneys = req.body.kidneys
     const response = schema.safeParse(kidneys)
     if(!response.success){
-        res.status(411).json({
+        res.status(411).json({   
             msg: "Input is Invalid"
         })
     } else {
