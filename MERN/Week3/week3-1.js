@@ -71,7 +71,7 @@ let numberOfRequests = 0
 function calculateRequest(req, res, next) {
     numberOfRequests ++ ;
     console.log(numberOfRequests);
-    next()
+    next()   
 }
 
 
