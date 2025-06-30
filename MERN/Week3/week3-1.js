@@ -91,7 +91,7 @@ app.use(function(err, req, res, next) { // Error handling Middlewares.
     res.json({
         msg : "Sorry, Somethin is up with our server."
     })
-})
+})  
 
 
 
