@@ -17,7 +17,7 @@
     const xhr = new XMLHttpRequest();     
     xhr.open('GET', requestUrl)
     xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
+        console.log(xhr.readyState);   
         if (xhr.readyState === 4) {
             const data = JSON.parse(this.responseText) //parse is a method which changes string into JSON format. 
             console.log(typeof data); // string  then  object. 
