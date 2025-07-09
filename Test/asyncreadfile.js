@@ -41,7 +41,7 @@ function adityaReadFile() {
     return new Promise(function(resolve) {
         fs.readFile("a.txt", "utf-8", function(err, data) { // Error 1st Callback! Suppose if the file is not present, the error will be shown liek ENOENT. ENOENT is a status code for file not being present.
             resolve(data);
-        })
+        })  
     })
 }
 
