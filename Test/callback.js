@@ -215,7 +215,7 @@ main3();
 // In this function the caller will send callback as the input 
 function normalSetTimeout(callback, duration){  // In this version a Callback is expected
     setTimeout(callback, duration)
-}
+}  
 
 normalSetTimeout(function(){
     console.log("I'm normal Async Function"); 
