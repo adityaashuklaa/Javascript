@@ -9,7 +9,7 @@ app.get("/files/:fileName", function(req, res)  {
     fs.readFile(name, "utf-8", function (err, data) {
         res.json({
             data
-        })  
+        })    
     })
 })      
 
