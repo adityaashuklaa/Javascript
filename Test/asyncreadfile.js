@@ -46,7 +46,7 @@ function adityaReadFile() {
 }
 
 function onDone(data) {
-    console.log(data);
+    console.log(data);   
 }
 
 adityaReadFile().then(onDone);
