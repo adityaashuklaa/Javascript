@@ -231,7 +231,7 @@ function myOwnSetTimeout(duration) { // Here the Callback is not being expected.
 }
 
 myOwnSetTimeout(1000) // After the function is being called, let it performed the callback.
-.then(function() {
+.then(function() {   
     console.log("log the first thing");
 })
 
