@@ -27,7 +27,7 @@ const fs = require("fs");
 fs.readFile("a.txt", "utf-8", function(err, data) {
     console.log(err);
     console.log(data);
-})
+})   
 
 fs.readFileSync("a.txt", "utf-8", function(err, data) { // This method is called when the user want to read the file synchonorously.
     console.log(err);
