@@ -185,7 +185,7 @@ function adityaAsyncFunction2() {
         // do async logic here
         resolve("Hi there, I'm promisified asynchonorous")
     });
-    return p;
+    return p;   
 }
 
 function main2() {
