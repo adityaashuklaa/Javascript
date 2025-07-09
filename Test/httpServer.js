@@ -45,7 +45,7 @@ const express = require("express");
 const app = express();
 
 function sum(n){
-    let ans = 0;
+    let ans = 0;   
     for(let i= 1; i<=n; i++){
         ans = ans+i;
     }
@@ -53,7 +53,7 @@ function sum(n){
 }
 
 app.get("/", function(req, res) {
-    const n = req.query.n;
+    const n = req.query.n;  
     const ans = sum(n);
     // res.send("Heyy Aditya, Keep up the work. Your ans is " + ans);
     res.send(`Hey Aditya, Keep up the good work. Your ans is ${ans}`);
