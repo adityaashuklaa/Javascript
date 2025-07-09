@@ -11,7 +11,7 @@ const app = express();
 // }
 
 function isOldEnoughMiddleware(req, res, next) {
-    const age = req.query.age;
+    const age = req.query.age;   
     if(age >= 14){
         next(); // middleware functionality. 
     }else{
