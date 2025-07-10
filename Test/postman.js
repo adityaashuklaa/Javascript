@@ -20,7 +20,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-
+   
 function sum(n) {
     let ans = 0;
     for(let i=0; i<=n; i++){
