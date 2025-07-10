@@ -49,7 +49,7 @@ function sum(n){
     for(let i= 1; i<=n; i++){
         ans = ans+i;
     }
-    return ans;
+    return ans;   
 }
 
 app.get("/", function(req, res) {
