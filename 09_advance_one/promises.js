@@ -44,7 +44,7 @@ const promiseFour = new Promise(function(resolve, reject){
 })
 
 // Promise Consumption
- promiseFour
+ promiseFour  
  .then((user) => {
     console.log(user);
     return user.username
