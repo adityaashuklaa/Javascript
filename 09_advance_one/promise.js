@@ -8,7 +8,7 @@ console.log("promises");
 
 // pending: initial state, neither fulfilled nor rejected.
 // fulfilled: meaning that the operation was completed successfully.
-// rejected: meaning that the operation failed.
+// rejected: meaning that the operation failed.   
 // typeof Promise is object. 
 // Promise takes a callback and reduces callback hell.
 // Promise can be handled using .then .catch or using async await. 
