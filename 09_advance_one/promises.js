@@ -64,7 +64,7 @@ const promiseFive = new Promise(function(resolve, reject){
         } else {
             reject('ERROR: JS went wrong')
         }
-    }, 1000)
+    }, 1000)   
 });
 
 // Async Await Syntax. (it waits a little to complete the work or throw error immediately as soon as it occurs.)
