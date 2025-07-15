@@ -4,7 +4,7 @@ const promiseOne = new Promise(function(resolve, reject){ // new keyword is used
     setTimeout(function(){
         console.log('Async task is compelete');
         resolve() // resolve is method which has to be called to build connection between .then hence making a true Promise. 
-    }, 1000)
+    }, 1000)  
 })
 
 promiseOne.then(function(){ // Promise is being Consumed using (.then) .then ka seedha connection hain resolve ke sath. 
