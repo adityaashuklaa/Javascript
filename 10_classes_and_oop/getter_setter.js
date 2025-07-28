@@ -4,7 +4,7 @@ class User {
         this.password = password
     }
 
-    get email(){
+    get email(){  
         return this._email.toUpperCase()
     }
     set email(value){

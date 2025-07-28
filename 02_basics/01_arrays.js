@@ -27,7 +27,7 @@ const myArr2 = new Array(1, 2, 3, 4) // Array usually makes shallow copies.
 
 // slice, splice
 
-console.log("A ", myArr);
+console.log("A ", myArr);  
 
 const myn1 = myArr.slice(1, 3) // Breaks down the array acc. to given parameters
 
