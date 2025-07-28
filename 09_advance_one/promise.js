@@ -4,7 +4,7 @@ console.log("promises");
 // Accessing file is a long process which doesn't executes as the speed of programs cause Kernal is involved in it. Cryptography also takes some time to be completed. All these functions in the world are solved using Asynchronorus programming. 
 // There are two methods which can solve this problem, one is async await() and famously used method is promise().
 
-//A Promise is in one of these states:
+//A Promise is in one of these states:  
 
 // pending: initial state, neither fulfilled nor rejected.
 // fulfilled: meaning that the operation was completed successfully.
