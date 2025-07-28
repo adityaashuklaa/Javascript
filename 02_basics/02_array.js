@@ -14,7 +14,7 @@ const all_new_heros = [...marvel_heros, ...dc_heros] //spread operator
 console.log(all_new_heros);
 console.log(typeof all_new_heros); // typeof all_new_heroes is an OBJECT.
 
-const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
 
 const real_another_array = another_array.flat(Infinity) // Flat returns a new array in which all sub-array are being concatenated, where INFINITY parameter is of depth.
 console.log(real_another_array);
