@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 
 const JsUser = { //key value pair.  
     name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    "full name": "Hitesh Choudhary",   
     [mySym]: "mykey1", //syntax for declaring symbol. []
     age: 18,
     location: "Jaipur",
