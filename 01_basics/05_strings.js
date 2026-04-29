@@ -19,7 +19,10 @@ console.log(gameName.indexOf('t'));
 const newString = gameName.substring(0, 4) // Substring ignores -ve sign and consider it as 0
 console.log(newString);
 
-const anotherString = gameName.slice(-8, 4) // -ve value will start slicing from backwards of the string.
+console.log(`Length of string ${gameName.length}`);
+
+
+const anotherString = gameName.slice(-8, 9) // -ve value will start slicing from backwards of the string.
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
