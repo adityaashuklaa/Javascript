@@ -62,6 +62,13 @@ app.post("/", function(req, res) {
     })
 })
 
+app.put("/", function(req, res) {
+    for(let i = 0; i < users[0].kidneys.length; i++){
+        users[0].kidneys[i].healthy = true
+    }
+    res.json({}) // without the res.json, the request will be hunged.
+})
+
 app.listen(3000, () => {
     console.log(`app is listening to port: 3000`);
 })
