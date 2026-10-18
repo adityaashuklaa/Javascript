@@ -46,6 +46,27 @@ app.post("/signin", function(req, res) {
     })
 })
 
+app.get("/users", function(req, res) {
+    let token = req.headers.authorization;
+    try {
+        let decoded = jwt.verify(token, jwtPassword)
+        let username = decoded.username
+        res.json({
+            users: ALL_USERS.filter(function(value) {
+                if (value.username == username) {
+                    return false
+                } else {
+                    return true
+                }
+            })
+        })
+    } catch (error) {
+        return res.status(403).json({
+            msg: "Invalid Token"
+        })
+    }
+})
+
 app.listen(PORT, () => {
     console.log(`app is listening to ${PORT}`);
 })
